@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Política de Privacidade — Storage Cleaner</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: #172033;
+      background: #f5f7fb;
+    }
+    body {
+      margin: 0;
+      padding: 24px 16px 56px;
+    }
+    main {
+      box-sizing: border-box;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: clamp(24px, 6vw, 56px);
+      background: #ffffff;
+      border: 1px solid #dce2ee;
+      border-radius: 16px;
+      box-shadow: 0 12px 36px rgb(23 32 51 / 8%);
+    }
+    h1, h2 {
+      line-height: 1.25;
+      color: #0d2147;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+    a {
+      color: #075bc7;
+      overflow-wrap: anywhere;
+    }
+    .summary {
+      padding: 16px 18px;
+      background: #eef4ff;
+      border-left: 4px solid #2563a9;
+      border-radius: 8px;
+    }
+    .metadata {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #dce2ee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #e5eaf3; background: #0d1320; }
+      main { background: #151e2f; border-color: #2c3950; box-shadow: none; }
+      h1, h2 { color: #eaf1ff; }
+      a { color: #8fc3ff; }
+      .summary { background: #192b47; border-left-color: #6da9ef; }
+      .metadata { border-bottom-color: #2c3950; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Política de Privacidade — Storage Cleaner</h1>
+
+    <div class="metadata">
+      <p><strong>Desenvolvedor:</strong> ANGEL CF<br>
+      <strong>Contato de privacidade:</strong> <a href="mailto:joaoacf.dv@gmail.com">joaoacf.dv@gmail.com</a><br>
+      <strong>Data de vigência:</strong> 15 de setembro de 2026</p>
+    </div>
+
+    <p class="summary">O Storage Cleaner analisa dados de armazenamento localmente no dispositivo. O aplicativo também usa os serviços de publicidade do Google, cujo processamento de dados é descrito separadamente nesta política.</p>
+
+    <h2>1. Sobre o aplicativo</h2>
+    <p>O Storage Cleaner é um aplicativo Android para análise de armazenamento, identificação de arquivos de mídia grandes, análise de arquivos duplicados, exclusão segura iniciada pelo usuário e análise de aplicativos visíveis por meio do Android PackageManager.</p>
+
+    <h2>2. Acesso e processamento local de mídia</h2>
+    <p>Com a sua autorização, o Storage Cleaner pode acessar mídias disponibilizadas pelo Android por meio de permissões e do MediaStore. Esse acesso permite calcular o uso do armazenamento e analisar imagens, vídeos e áudios acessíveis.</p>
+    <p>Conforme a função utilizada e o acesso concedido, o processamento pode incluir nomes de arquivos ou mídias, identificadores do MediaStore, tamanhos, metadados necessários à análise, totais de armazenamento, resultados da comparação de duplicados e os itens que você selecionar para exclusão.</p>
+    <p>O código próprio da ANGEL CF processa esses resultados de varredura localmente no dispositivo. Eles não são enviados a um backend da ANGEL CF. O aplicativo atual não possui backend próprio, analytics próprios, telemetria própria ou serviço próprio de relatório de falhas.</p>
+
+    <h2>3. Arquivos grandes e duplicados</h2>
+    <p>O Storage Cleaner consulta as mídias acessíveis para identificar arquivos grandes. Para procurar duplicados, o aplicativo compara localmente o tamanho e o conteúdo de arquivos candidatos e calcula hashes SHA-256 no dispositivo. Os arquivos e seus hashes não são enviados a um servidor da ANGEL CF.</p>
+
+    <h2>4. Exclusão de conteúdo</h2>
+    <p>A exclusão depende de uma seleção feita por você. Quando aplicável, o Storage Cleaner envia as referências dos itens selecionados ao fluxo de exclusão controlado pelo Android, que solicita sua confirmação. O aplicativo não executa exclusão automática e arbitrária do seu conteúdo.</p>
+
+    <h2>5. Análise de aplicativos</h2>
+    <p>O recurso de análise de aplicativos pode consultar informações expostas ao Storage Cleaner pelo Android PackageManager, como nome do pacote, nome visível, versão, datas de instalação ou atualização, estado habilitado e classificação como aplicativo do sistema. O Android filtra a visibilidade de pacotes, portanto o resultado pode não incluir todos os aplicativos instalados.</p>
+    <p>O Storage Cleaner não solicita a permissão <code>QUERY_ALL_PACKAGES</code>. O inventário acessível é processado localmente pelo código próprio do aplicativo e não é enviado a um backend da ANGEL CF nem usado pelo aplicativo para segmentação de anúncios.</p>
+
+    <h2>6. Google Mobile Ads e publicidade</h2>
+    <p>O Storage Cleaner usa o Google Mobile Ads (AdMob) para exibir publicidade. Esse processamento do SDK do Google é separado da análise local de armazenamento feita pelo código próprio da ANGEL CF. O aplicativo não fornece ao código de publicidade nomes de arquivos, identificadores do MediaStore, nomes de pacotes, inventário de aplicativos, grupos de duplicados, totais de armazenamento, arquivos selecionados, planos de exclusão ou resultados de varredura.</p>
+    <p>Segundo a divulgação atual do Google para o GMA Next-Gen SDK, o SDK pode coletar e compartilhar automaticamente endereço IP, interações do usuário com o produto, informações de diagnóstico e identificadores do dispositivo ou da conta para finalidades que incluem publicidade, analytics e prevenção a fraudes. O endereço IP pode ser usado para estimar a localização aproximada do dispositivo. A ANGEL CF não coleta esses dados de forma independente por meio de um backend próprio na arquitetura atual.</p>
+    <p>O Google informa que os dados coletados pelo GMA Next-Gen SDK são criptografados em trânsito com TLS. As práticas, escolhas e períodos de retenção aplicáveis aos serviços de publicidade são controlados pelo Google e descritos em sua <a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure">divulgação de dados do GMA Next-Gen</a> e em sua <a href="https://policies.google.com/privacy">Política de Privacidade</a>.</p>
+
+    <h2>7. Consentimento e opções de privacidade</h2>
+    <p>O Storage Cleaner usa a Google User Messaging Platform (UMP) para solicitar a atualização das informações de consentimento e apresentar mensagens de privacidade quando exigidas pelo Google. As solicitações de anúncios ficam sujeitas ao resultado do fluxo oficial de consentimento e privacidade aplicável. O aplicativo não interpreta nem persiste por conta própria as escolhas de consentimento.</p>
+    <p>Quando a UMP exigir e disponibilizar essa opção, o aplicativo apresenta a ação “Opções de privacidade” para que você possa revisar as escolhas oferecidas pelo Google.</p>
+
+    <h2>8. Retenção, segurança e controle do usuário</h2>
+    <p>Os resultados atuais da análise local não são mantidos em um backend remoto da ANGEL CF, pois não existe backend próprio para essas funções. Suas mídias continuam sob o controle do dispositivo e do usuário, exceto quando você confirma uma exclusão pelo fluxo do aplicativo e do Android.</p>
+    <p>Você pode negar ou revogar permissões de mídia nas configurações do Android, escolher os itens cuja exclusão deseja solicitar, usar as opções de privacidade da UMP quando disponíveis e desinstalar o aplicativo. O acesso limitado a mídias pode produzir totais e resultados incompletos.</p>
+
+    <h2>9. Conta do usuário</h2>
+    <p>O Storage Cleaner não oferece atualmente um sistema de cadastro de conta de usuário da ANGEL CF. Por isso, não há conta da ANGEL CF para solicitar exclusão neste aplicativo.</p>
+
+    <h2>10. Alterações desta política</h2>
+    <p>Esta política poderá ser atualizada quando as práticas do aplicativo, os SDKs de terceiros ou os requisitos aplicáveis mudarem. A data de vigência acima será atualizada quando uma revisão entrar em vigor.</p>
+
+    <h2>11. Contato</h2>
+    <p>ANGEL CF<br>
+    <a href="mailto:joaoacf.dv@gmail.com">joaoacf.dv@gmail.com</a></p>
+  </main>
+</body>
+</html>
